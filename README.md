@@ -24,6 +24,36 @@ For asynchronous call I am using asyncio and concurrent.futures python library, 
 
 <b>Note</b>: Due to lack of System Memory I am not using Spark related stuff, because I had to install Java and Spark in my local system which was causing system low.
 
+## Directory Structure:
+```buildoutcfg
+.
+├── app
+│   ├── 2020-04-08-13-52-37_data.json
+│   ├── 2020-04-08-13-52-56_data.json
+│   ├── app
+│   │   ├── asgi.py
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── db.sqlite3
+│   ├── manage.py
+│   └── weatherdata
+│       ├── admin.py
+│       ├── apps.py
+│       ├── __init__.py
+│       ├── migrations
+│       │   └── __init__.py
+│       ├── models.py
+│       ├── tests.py
+│       ├── urls.py
+│       └── views.py
+└── README.md
+
+```
+```buildoutcfg
+All business logic is written in: weatherdata/app/weatherdata/views.py
+```
 
 
 ## Run Python file:
