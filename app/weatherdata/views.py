@@ -8,16 +8,8 @@ response. Also, city name is the mandatory params here.
 2. get_list_of_weather_data: It will fetch the list of weather data for a all city passed into a GET request.
 This API endpoint will fetch weatherdata asynchronously for all the cities, also it stores their data on JSON file
 
-** Due to less memory in my personal laptop I am not installing any Spark library, so that's why I am not using
-"parquet" format for storing the data
-
-**  For asynchronous call I am using asyncio and concurrent.futures python library, we could have used "Celery" and
-"RabbitMQ" as a backend but again I had to install external python packages.
-
 3. get_min_max_weatherdata: This endpoint will read the weather data from the latest JSON files and return
 average weather data temperature, humidity and pressure,
-
-4. Here Python 3.6 is used for development.
 """
 
 
