@@ -24,7 +24,7 @@ import os
 import requests
 from requests import HTTPError
 
-api_key = "6aa99efe0f5372d7133a7120f6195784"
+api_key = "68216aa99efe0f5372d7133a7120f6195784"
 base_url = "http://api.openweathermap.org/data/2.5/weather?q={city_name}&APPID={api_key}"
 
 loop = asyncio.get_event_loop()
